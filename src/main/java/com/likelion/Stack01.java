@@ -17,6 +17,15 @@ public class Stack01 {
         this.pointer ++;
     }
 
+    public int pop() {
+        // push에서 pointer ++ 를 하기 때문에 넣은건 index[1]까지인데
+        // test 돌릴 땐 index[2]로 생각하기 때문에 '-1' 를 꼭 해줘야함
+        int value = this.arr[this.pointer-1];
+        this.pointer--;
+        return value;
+
+    }
+
     public int[] getArr(){
         return arr;
     }
