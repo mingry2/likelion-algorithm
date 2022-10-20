@@ -55,9 +55,21 @@ class Stack02Test {
     }
 
     @Test
+    void peek() {
+        Stack02 st = new Stack02();
+        // Stack이 비었는데 peek()할때
+        assertThrows(EmptyStackException.class,()->{
+            st.peek();
+        });
+        st.push(10);
+        int peeked = st.peek();
+        assertEquals(10, peeked);
+
+    }
+
+    @Test
     void realStack(){
-        Stack<Integer> st = new Stack<>(); //실제 util에 있는 stack
-        //st.pop(); //java.util.EmptyStackException 발생. 당연함. 아무 것도 없는데 뭘 pop해
+        Stack<Integer> st = new Stack<>();
         assertThrows(EmptyStackException.class, () -> {
             st.pop();
         });
