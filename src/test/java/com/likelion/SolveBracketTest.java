@@ -13,7 +13,7 @@ class SolveBracketTest {
         SolveBracket sb = new SolveBracket();
         assertTrue(sb.solution("()()"));
         assertTrue(sb.solution("(())()"));
-        assertFalse(sb.solution(")()("));
+        assertFalse(sb.solution(")()(")); // stack 사용 시 처음에 ) 가 나와서 비어있는데 pop을 못함
         assertFalse(sb.solution("(()("));
         assertFalse(sb.solution("((((((((((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))))))))))))))"));
     }
