@@ -64,7 +64,6 @@ class Stack02Test {
         st.push(10);
         int peeked = st.peek();
         assertEquals(10, peeked);
-
     }
 
     @Test
@@ -74,5 +73,4 @@ class Stack02Test {
             st.pop();
         });
     }
-
 }
