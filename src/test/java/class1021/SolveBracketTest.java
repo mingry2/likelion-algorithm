@@ -1,4 +1,4 @@
-package com.likelion;
+package class1021;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

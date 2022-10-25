@@ -1,4 +1,4 @@
-package com.likelion;
+package class1021;
 
 import java.util.Stack;
 
@@ -27,7 +27,8 @@ public class SolveBracket {
             if ('(' == s.charAt(i)) {
                 st.push(s.valueOf(i));
             } else if (')' == s.charAt(i)) {
-                if(st.empty()) return false; //
+                // 첫번째 push가 ')' 이라 push가 아니라 pop을 해야하는데 스택이 비어있어서 pop을 못함 -> error 발생
+                if(st.empty()) return false;
                 st.pop();
             }
         }
