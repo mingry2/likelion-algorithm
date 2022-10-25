@@ -7,13 +7,13 @@ import java.util.Set;
 // 기본적으로 HashFunction을 받음
 public class HashTable {
 
-    private int size = 10000; // 기본 10000을 잘 사용함
+    private int size = 10000; // 기본 10000을 사용함 -> 메모리 소모가 많이 됨
     private int[] table = new int[size]; // key, value를 저장하기 위한 테이블 생성
 
     public HashTable() { // size가 없을 경우
     }
 
-    public HashTable(int size) { // 기본 생성자로 size를 넣음
+    public HashTable(int size) { // size 값을 받는 기본 생성자로 생성
         this.size = size;
         this.table = new int[size];
     }
