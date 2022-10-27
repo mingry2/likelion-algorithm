@@ -19,4 +19,6 @@ public class HashFunction {
         HashFunction hashFunction = new HashFunction();
         hashFunction.hash("minkyoung");
     }
+
+
 }
